@@ -4,6 +4,8 @@
   "description": "A sample of components",
   "main": "index.js",
   "scripts": {
+    "lint:css": "stylelint './src/**/styles.js'",
+    "lint:js": "eslint './src/**/*.js'",
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "repository": "",
@@ -14,15 +16,23 @@
   },
   "homepage": "https://github.com/sallynorthmore/sample#readme",
   "devDependencies": {
-    "@storybook/react": "^3.2.0",
-    "babel-core": "^6.26.0",
     "@storybook/addon-actions": "^3.2.0",
     "@storybook/addon-info": "^3.2.0",
     "@storybook/addon-knobs": "^3.2.0",
-    "@storybook/addon-links": "^3.2.0"
+    "@storybook/addon-links": "^3.2.0",
+    "@storybook/react": "^3.2.0",
+    "babel-core": "^6.26.0",
+    "eslint": "^4.17.0",
+    "eslint-config-recommended": "^2.0.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "prettier": "1.8.2"
   },
   "dependencies": {
+    "babel-eslint": "^8.2.2",
+    "moment": "^2.21.0",
     "react": "^16.2.0",
+    "react-dates": "^16.4.0",
     "react-dom": "^16.2.0",
     "styled-components": "^2.2.3"
   }
