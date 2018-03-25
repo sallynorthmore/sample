@@ -1,0 +1,589 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ChoiceList /> snapshots Expect snapshot to match with props 1`] = `
+.c1 {
+  box-shadow: inset 0 -1px 0 0 rgba(227,232,236,1);
+  -webkit-flex: 0 0 45px;
+  -ms-flex: 0 0 45px;
+  flex: 0 0 45px;
+  text-align: right;
+}
+
+.c3 {
+  background: transparent;
+  border: none;
+  color: rgba(122,122,122,0.7);
+  cursor: pointer;
+  display: inline-block;
+  font: 400 13px/1 'Lato';
+  opacity: 0.3;
+  outline: none;
+  padding: 16px 8px;
+  pointer-events: none;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c3:hover {
+  color: rgba(0,129,187,1);
+}
+
+.c3:not(:first-of-type)::before {
+  background: rgba(227,232,236,1);
+  content: '';
+  display: inline-block;
+  height: 13px;
+  left: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.c2 {
+  background: transparent;
+  border: none;
+  color: rgba(122,122,122,0.7);
+  cursor: pointer;
+  display: inline-block;
+  font: 400 13px/1 'Lato';
+  opacity: 1;
+  outline: none;
+  padding: 16px 8px;
+  pointer-events: auto;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c2:hover {
+  color: rgba(0,129,187,1);
+}
+
+.c2:not(:first-of-type)::before {
+  background: rgba(227,232,236,1);
+  content: '';
+  display: inline-block;
+  height: 13px;
+  left: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.c5 {
+  padding: 8px 8px 0;
+  position: relative;
+}
+
+.c6 {
+  border: 0;
+  border-bottom: 1px solid rgba(227,232,236,1);
+  font: 400 13px/ 1 'Lato';
+  outline: none;
+  padding: 8px 8px 16px 24px;
+  width: 100%;
+}
+
+.c6::selection {
+  background: rgba(0,129,187,1);
+  color: white;
+}
+
+.c6::-webkit-input-placeholder {
+  color: rgba(11,26,52,0.5);
+  font: 400 13px/ 1 'Lato';
+}
+
+.c6::-moz-placeholder {
+  color: rgba(11,26,52,0.5);
+  font: 400 13px/ 1 'Lato';
+}
+
+.c6:-ms-input-placeholder {
+  color: rgba(11,26,52,0.5);
+  font: 400 13px/ 1 'Lato';
+}
+
+.c6::placeholder {
+  color: rgba(11,26,52,0.5);
+  font: 400 13px/ 1 'Lato';
+}
+
+.c6:focus {
+  color: rgba(0,129,187,1);
+  font-weight: 400;
+}
+
+.c7 {
+  bottom: 15px;
+  color: rgba(60,79,114,0.6);
+  position: absolute;
+  z-index: 1;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 336px;
+  width: 100%;
+}
+
+.c8 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: rgba(51,51,51,1);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font: 400 14px/1 'Lato';
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0;
+  min-height: 54px;
+  padding: 0 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%;
+}
+
+.c4 {
+  -webkit-flex: 0 0 50px;
+  -ms-flex: 0 0 50px;
+  flex: 0 0 50px;
+  min-height: 50px;
+}
+
+.c9 {
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  overflow: auto;
+}
+
+.c10 {
+  position: relative;
+}
+
+.c11 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: white;
+  color: rgba(51,51,51,1);
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font: 400 14px/1 'Lato';
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 336px;
+  min-height: 54px;
+  padding: 0 16px;
+  -webkit-transition: background 0.195s cubic-bezier(0.4,0,0.2,1);
+  transition: background 0.195s cubic-bezier(0.4,0,0.2,1);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%;
+}
+
+.c11:hover {
+  background: rgba(248,248,248,1);
+  color: rgba(0,129,187,1);
+}
+
+.c12 {
+  display: inline-block;
+  font-weight: inherit;
+  overflow: hidden;
+  padding-right: 32px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c13 {
+  display: inline-block;
+  margin: auto 0 auto auto;
+  opacity: 0;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <button
+      className="c2"
+      disabled={false}
+      onClick={[Function]}
+    >
+      Select all
+    </button>
+    <button
+      className="c3"
+      disabled={true}
+      onClick={[Function]}
+    >
+      Clear
+    </button>
+  </div>
+  <div
+    className="c4"
+  >
+    <div
+      className="c5"
+    >
+      <input
+        className="c6"
+        onChange={[Function]}
+        placeholder="Filter"
+        type="text"
+        value=""
+      />
+      <div
+        className="c7"
+      >
+        <svg
+          viewBox="0 0 17 17"
+          width="15px"
+        >
+          <g
+            fill="none"
+            stroke="none"
+            strokeLinecap="round"
+            strokeWidth="1"
+          >
+            <g
+              stroke="currentColor"
+              strokeWidth="2"
+              transform="translate(1.000000, 1.000000)"
+            >
+              <g>
+                <circle
+                  cx="6.5"
+                  cy="6.5"
+                  r="6"
+                />
+                <path
+                  d="M14.5,14.5 L10.742,10.742"
+                />
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <h3
+    className="c8"
+  >
+    Sources
+  </h3>
+  <div
+    className="c9"
+  >
+    <div
+      className="c10"
+      title="Choice 1"
+    >
+      <div
+        className="c11"
+        onClick={[Function]}
+      >
+        <span
+          className="c12"
+        >
+          Choice 1
+        </span>
+        <span
+          className="c13"
+        >
+          <svg
+            viewBox="0 0 14 13"
+            width="14px"
+          >
+            <g
+              fill="none"
+              stroke="none"
+              strokeWidth="1"
+            >
+              <g
+                id="UI-/-Dropdown"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                transform="translate(-175.000000, -208.000000)"
+              >
+                <polyline
+                  id="Path-2"
+                  points="176 215.527473 179.75 219.153846 188 209"
+                />
+              </g>
+            </g>
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10"
+      title="Choice 2 "
+    >
+      <div
+        className="c11"
+        onClick={[Function]}
+      >
+        <span
+          className="c12"
+        >
+          Choice 2 
+        </span>
+        <span
+          className="c13"
+        >
+          <svg
+            viewBox="0 0 14 13"
+            width="14px"
+          >
+            <g
+              fill="none"
+              stroke="none"
+              strokeWidth="1"
+            >
+              <g
+                id="UI-/-Dropdown"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                transform="translate(-175.000000, -208.000000)"
+              >
+                <polyline
+                  id="Path-2"
+                  points="176 215.527473 179.75 219.153846 188 209"
+                />
+              </g>
+            </g>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<ChoiceList /> snapshots Expect snapshot to match without props 1`] = `
+.c1 {
+  box-shadow: inset 0 -1px 0 0 rgba(227,232,236,1);
+  -webkit-flex: 0 0 45px;
+  -ms-flex: 0 0 45px;
+  flex: 0 0 45px;
+  text-align: right;
+}
+
+.c2 {
+  background: transparent;
+  border: none;
+  color: rgba(122,122,122,0.7);
+  cursor: pointer;
+  display: inline-block;
+  font: 400 13px/1 'Lato';
+  opacity: 0.3;
+  outline: none;
+  padding: 16px 8px;
+  pointer-events: none;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c2:hover {
+  color: rgba(0,129,187,1);
+}
+
+.c2:not(:first-of-type)::before {
+  background: rgba(227,232,236,1);
+  content: '';
+  display: inline-block;
+  height: 13px;
+  left: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.c4 {
+  padding: 8px 8px 0;
+  position: relative;
+}
+
+.c5 {
+  border: 0;
+  border-bottom: 1px solid rgba(227,232,236,1);
+  font: 400 13px/ 1 'Lato';
+  outline: none;
+  padding: 8px 8px 16px 24px;
+  width: 100%;
+}
+
+.c5::selection {
+  background: rgba(0,129,187,1);
+  color: white;
+}
+
+.c5::-webkit-input-placeholder {
+  color: rgba(11,26,52,0.5);
+  font: 400 13px/ 1 'Lato';
+}
+
+.c5::-moz-placeholder {
+  color: rgba(11,26,52,0.5);
+  font: 400 13px/ 1 'Lato';
+}
+
+.c5:-ms-input-placeholder {
+  color: rgba(11,26,52,0.5);
+  font: 400 13px/ 1 'Lato';
+}
+
+.c5::placeholder {
+  color: rgba(11,26,52,0.5);
+  font: 400 13px/ 1 'Lato';
+}
+
+.c5:focus {
+  color: rgba(0,129,187,1);
+  font-weight: 400;
+}
+
+.c6 {
+  bottom: 15px;
+  color: rgba(60,79,114,0.6);
+  position: absolute;
+  z-index: 1;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 336px;
+  width: 100%;
+}
+
+.c3 {
+  -webkit-flex: 0 0 50px;
+  -ms-flex: 0 0 50px;
+  flex: 0 0 50px;
+  min-height: 50px;
+}
+
+.c7 {
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  overflow: auto;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <button
+      className="c2"
+      disabled={true}
+      onClick={[Function]}
+    >
+      Select all
+    </button>
+    <button
+      className="c2"
+      disabled={true}
+      onClick={[Function]}
+    >
+      Clear
+    </button>
+  </div>
+  <div
+    className="c3"
+  >
+    <div
+      className="c4"
+    >
+      <input
+        className="c5"
+        onChange={[Function]}
+        placeholder="Filter"
+        type="text"
+        value=""
+      />
+      <div
+        className="c6"
+      >
+        <svg
+          viewBox="0 0 17 17"
+          width="15px"
+        >
+          <g
+            fill="none"
+            stroke="none"
+            strokeLinecap="round"
+            strokeWidth="1"
+          >
+            <g
+              stroke="currentColor"
+              strokeWidth="2"
+              transform="translate(1.000000, 1.000000)"
+            >
+              <g>
+                <circle
+                  cx="6.5"
+                  cy="6.5"
+                  r="6"
+                />
+                <path
+                  d="M14.5,14.5 L10.742,10.742"
+                />
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c7"
+  />
+</div>
+`;

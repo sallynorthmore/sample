@@ -1,0 +1,29 @@
+{
+  "name": "component-library",
+  "version": "1.0.0",
+  "description": "A sample of components",
+  "main": "index.js",
+  "scripts": {
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  },
+  "repository": "",
+  "author": "Sally Northmore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sallynorthmore/sample/issues"
+  },
+  "homepage": "https://github.com/sallynorthmore/sample#readme",
+  "devDependencies": {
+    "@storybook/react": "^3.2.0",
+    "babel-core": "^6.26.0",
+    "@storybook/addon-actions": "^3.2.0",
+    "@storybook/addon-info": "^3.2.0",
+    "@storybook/addon-knobs": "^3.2.0",
+    "@storybook/addon-links": "^3.2.0"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "styled-components": "^2.2.3"
+  }
+}

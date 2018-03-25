@@ -1,0 +1,255 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NumberPicker /> snapshots renders correctly 1`] = `
+.c1 {
+  box-shadow: inset 0 -1px 0 0 rgba(227,232,236,1);
+  -webkit-flex: 0 0 45px;
+  -ms-flex: 0 0 45px;
+  flex: 0 0 45px;
+  text-align: right;
+}
+
+.c2 {
+  background: transparent;
+  border: none;
+  color: rgba(122,122,122,0.7);
+  cursor: pointer;
+  display: inline-block;
+  font: 400 13px/1 'Lato';
+  opacity: 1;
+  outline: none;
+  padding: 16px 8px;
+  pointer-events: auto;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c2:hover {
+  color: rgba(0,129,187,1);
+}
+
+.c2:not(:first-of-type)::before {
+  background: rgba(227,232,236,1);
+  content: '';
+  display: inline-block;
+  height: 13px;
+  left: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.c0 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  max-width: 400px;
+  text-align: center;
+}
+
+.c3 {
+  color: rgba(122,122,122,1);
+  font: 400 11px 'Lato';
+  margin: 4px 0 0;
+  visibility: hidden;
+}
+
+.c4 {
+  margin: 24px auto;
+  padding: 8px 0;
+  position: relative;
+  width: 128px;
+}
+
+.c5 {
+  background: white;
+  border: none;
+  box-shadow: inset 0 0 0 1px rgba(213,216,220,1);
+  color: rgba(122,122,122,1);
+  height: 40px;
+  outline: none;
+  padding: 0 15px 0 8px;
+  -webkit-transition: box-shadow 0.195s cubic-bezier(0.4,0,0.2,1), color 0.195s cubic-bezier(0.4,0,0.2,1);
+  transition: box-shadow 0.195s cubic-bezier(0.4,0,0.2,1), color 0.195s cubic-bezier(0.4,0,0.2,1);
+  width: 100%;
+}
+
+.c5:focus {
+  box-shadow: inset 0 0 0 1px rgba(0,129,187,1);
+  color: rgba(0,129,187,1);
+}
+
+.c5::selection {
+  background: rgba(0,129,187,1);
+  color: white;
+}
+
+.c6 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+}
+
+.c7 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: rgba(0,129,187,1);
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font: 700 16px/1 'Lato';
+  height: 27px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: none;
+  position: relative;
+  -webkit-transition: background 0.192s cubic-bezier(0.4,0,0.2,1);
+  transition: background 0.192s cubic-bezier(0.4,0,0.2,1);
+  width: 30px;
+}
+
+.c7:not(:first-child)::before {
+  background: rgba(255,255,255,0.2);
+  content: '';
+  display: block;
+  height: 1px;
+  left: 20%;
+  position: absolute;
+  top: 0;
+  width: 60%;
+}
+
+.c7:hover {
+  background: rgba(1,167,226,1);
+}
+
+.c7:hover:not(:first-child)::before,
+.c7:hover + button:before {
+  display: none;
+}
+
+.c7:disabled {
+  pointer-events: none;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <button
+      className="c2"
+      disabled={false}
+      onClick={[Function]}
+    >
+      Clear
+    </button>
+  </div>
+  <p
+    className="c3"
+  >
+    (
+    0
+     - 
+    200
+    )
+  </p>
+  <div
+    className="c4"
+  >
+    <input
+      className="c5"
+      name="input"
+      onChange={[Function]}
+      type="number"
+      value=""
+    />
+    <div
+      className="c6"
+    >
+      <button
+        className="c7"
+        name="increase"
+        onClick={[Function]}
+      >
+        <svg
+          viewBox="0 0 10 10"
+          width="10px"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <g
+              fill="currentColor"
+              transform="translate(-103.000000, -12.000000)"
+            >
+              <g
+                transform="translate(103.000000, 12.000000)"
+              >
+                <rect
+                  height="10"
+                  width="2"
+                  x="4"
+                  y="0"
+                />
+                <rect
+                  height="10"
+                  transform="translate(5.000000, 5.000000) rotate(90.000000) translate(-5.000000, -5.000000) "
+                  width="2"
+                  x="4"
+                  y="0"
+                />
+              </g>
+            </g>
+          </g>
+        </svg>
+      </button>
+      <button
+        className="c7"
+        name="decrease"
+        onClick={[Function]}
+      >
+        <svg
+          viewBox="0 0 9 2"
+          width="9px"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <g
+              fill="currentColor"
+              transform="translate(-104.000000, -42.000000)"
+            >
+              <rect
+                height="9"
+                transform="translate(108.500000, 43.000000) rotate(90.000000) translate(-108.500000, -43.000000) "
+                width="2"
+                x="107.5"
+                y="38.5"
+              />
+            </g>
+          </g>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;

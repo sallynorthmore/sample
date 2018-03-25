@@ -1,0 +1,724 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Search /> snapshots Expect snapshot to match with props 1`] = `
+.c8 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: linear-gradient( to right, rgba(210,214,220,0) 0%, rgba(210,214,220,1) 70%, rgba(210,214,220,1) 100% );
+  border-radius: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 32px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  opacity: 0;
+  position: absolute;
+  right: 16px;
+  top: 0;
+  -webkit-transition: opacity 0.12s cubic-bezier(0.4,0,0.2,1);
+  transition: opacity 0.12s cubic-bezier(0.4,0,0.2,1);
+  width: 40px;
+  z-index: 1;
+}
+
+.c6 {
+  max-width: 112px;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c5 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: rgba(226,228,231,1);
+  border: 0 none;
+  border-radius: 20px;
+  color: rgba(51,51,51,1);
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font: 400 13px/1.2 'Lato';
+  height: 32px;
+  outline: none;
+  padding: 0 16px;
+  position: relative;
+  -webkit-transition: background 0.12s cubic-bezier(0.4,0,0.2,1);
+  transition: background 0.12s cubic-bezier(0.4,0,0.2,1);
+}
+
+.c5:hover {
+  background: rgba(210,214,220,1);
+}
+
+.c5:hover .c7 {
+  opacity: 1;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.c2 {
+  display: inline-block;
+  -webkit-flex: 0 0 18px;
+  -ms-flex: 0 0 18px;
+  flex: 0 0 18px;
+  margin: auto auto auto 16px;
+  opacity: 0.6;
+  padding-top: 4px;
+  width: 18px;
+}
+
+.c9 {
+  display: inline-block;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  position: relative;
+  width: 100%;
+}
+
+.c10 {
+  border: 0;
+  font: 400 16px/ 1 'Lato';
+  height: 48px;
+  outline: none;
+  padding: 8px 16px;
+  width: 100%;
+}
+
+.c10::-webkit-input-placeholder {
+  color: rgba(11,26,52,0.5);
+  font: 300 13px/ 1 'Lato';
+  line-height: 1.5;
+}
+
+.c10::-moz-placeholder {
+  color: rgba(11,26,52,0.5);
+  font: 300 13px/ 1 'Lato';
+  line-height: 1.5;
+}
+
+.c10:-ms-input-placeholder {
+  color: rgba(11,26,52,0.5);
+  font: 300 13px/ 1 'Lato';
+  line-height: 1.5;
+}
+
+.c10::placeholder {
+  color: rgba(11,26,52,0.5);
+  font: 300 13px/ 1 'Lato';
+  line-height: 1.5;
+}
+
+.c10:focus {
+  color: rgba(14,176,234,1);
+  font-weight: 400;
+}
+
+.c11 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: linear-gradient( to right, rgba(255,255,255,0) 0%, white 50%, white 100% );
+  border: 0 none;
+  color: rgba(51,51,51,0.3);
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 48px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  outline: none;
+  padding: 0;
+  position: absolute;
+  right: 16px;
+  top: 0;
+  -webkit-transition: color 0.195s cubic-bezier(0.4,0,0.2,1);
+  transition: color 0.195s cubic-bezier(0.4,0,0.2,1);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 40px;
+  z-index: 1;
+}
+
+.c11:hover {
+  color: rgba(51,51,51,1);
+}
+
+.c11:disabled {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.c12 {
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,0.5);
+  display: block;
+  position: absolute;
+  width: 100%;
+}
+
+.c1 {
+  background: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.c13 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c18 {
+  font-weight: 400;
+  margin: 0 0 0 8px;
+  opacity: 0.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c14 {
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  background: white;
+  color: rgba(51,51,51,1);
+  cursor: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font: 700 14px 'Lato';
+  height: 40px;
+  overflow: hidden;
+  padding: 12px 16px 0;
+  position: relative;
+  -webkit-transition: background 0.15s cubic-bezier(0.4,0,0.2,1);
+  transition: background 0.15s cubic-bezier(0.4,0,0.2,1);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.c14::before {
+  background: rgba(227,232,236,1);
+  content: '';
+  display: block;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.c14:hover {
+  background: rgba(248,248,248,1);
+  color: rgba(14,176,234,1);
+}
+
+.c14:hover .c17 {
+  opacity: 1;
+}
+
+.c15 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: white;
+  color: rgba(101,101,101,1);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  left: 0;
+  padding: 8px 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.c16 {
+  color: rgba(153,153,153,1);
+  margin: 0 8px 0 16px;
+  width: 24px;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+.c4 {
+  display: block;
+  padding: 0 0 0 8px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    onClick={[Function]}
+  />
+  <div
+    aria-hidden="true"
+    className="c2"
+  >
+    <svg
+      viewBox="0 0 17 17"
+      width="18px"
+    >
+      <g
+        fill="none"
+        stroke="none"
+        strokeLinecap="round"
+        strokeWidth="1"
+      >
+        <g
+          stroke="currentColor"
+          strokeWidth="2"
+          transform="translate(1.000000, 1.000000)"
+        >
+          <g>
+            <circle
+              cx="6.5"
+              cy="6.5"
+              r="6"
+            />
+            <path
+              d="M14.5,14.5 L10.742,10.742"
+            />
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <div
+    className="c3"
+  >
+    <div
+      className="c4"
+    >
+      <button
+        className="c5"
+        title="Tckr: ABX, ACB, ACGL"
+      >
+        <span
+          className="c6"
+        >
+          Tckr: ABX, ACB, ACGL
+        </span>
+        <span
+          className="c7 c8"
+          onClick={[Function]}
+        >
+          <svg
+            viewBox="0 0 12 12"
+            width="8px"
+          >
+            <g
+              fill="none"
+              fillRule="evenodd"
+              stroke="none"
+              strokeWidth="1"
+            >
+              <g
+                fill="currentColor"
+                fillRule="nonzero"
+              >
+                <polygon
+                  points="11.53 1.53 10.47 0.47 6 4.94 1.53 0.47 0.47 1.53 4.94 6 0.47 10.47 1.53 11.53 6 7.06 10.47 11.53 11.53 10.47 7.06 6"
+                />
+              </g>
+            </g>
+          </svg>
+        </span>
+      </button>
+    </div>
+    <div
+      className="c4"
+    >
+      <button
+        className="c5"
+        title="B Size: 1000"
+      >
+        <span
+          className="c6"
+        >
+          B Size: 1000
+        </span>
+        <span
+          className="c7 c8"
+          onClick={[Function]}
+        >
+          <svg
+            viewBox="0 0 12 12"
+            width="8px"
+          >
+            <g
+              fill="none"
+              fillRule="evenodd"
+              stroke="none"
+              strokeWidth="1"
+            >
+              <g
+                fill="currentColor"
+                fillRule="nonzero"
+              >
+                <polygon
+                  points="11.53 1.53 10.47 0.47 6 4.94 1.53 0.47 0.47 1.53 4.94 6 0.47 10.47 1.53 11.53 6 7.06 10.47 11.53 11.53 10.47 7.06 6"
+                />
+              </g>
+            </g>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c9"
+  >
+    <input
+      className="c10"
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      placeholder="Find (F1)"
+      type="text"
+      value=""
+    />
+    <button
+      className="c11"
+      disabled={false}
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 12 12"
+        width="14px"
+      >
+        <g
+          fill="none"
+          fillRule="evenodd"
+          stroke="none"
+          strokeWidth="1"
+        >
+          <g
+            fill="currentColor"
+            fillRule="nonzero"
+          >
+            <polygon
+              points="11.53 1.53 10.47 0.47 6 4.94 1.53 0.47 0.47 1.53 4.94 6 0.47 10.47 1.53 11.53 6 7.06 10.47 11.53 11.53 10.47 7.06 6"
+            />
+          </g>
+        </g>
+      </svg>
+    </button>
+    <div
+      className="c12"
+    >
+      <ul
+        className="c13"
+      >
+        <li
+          className="c14"
+        >
+          <span
+            className="c15"
+          >
+            <span
+              className="c16"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="20px"
+              >
+                <g
+                  fill="currentColor"
+                  fillRule="nonzero"
+                  transform="translate(-11.000000, -12.000000)"
+                >
+                  <path
+                    d="M23,12 C16.383,12 11,17.383 11,24 C11,30.617 16.383,36 23,36 C29.617,36 35,30.617 35,24 C35,17.383 29.617,12 23,12 Z M24.645,17 L24,26 L22,26 L21.392,17 L24.645,17 Z M23,32 C21.895,32 21,31.105 21,30 C21,28.895 21.895,28 23,28 C24.105,28 25,28.895 25,30 C25,31.105 24.105,32 23,32 Z"
+                    id="Shape"
+                  />
+                </g>
+              </svg>
+            </span>
+            Not Found
+            <span
+              className="c17 c18"
+            >
+              
+            </span>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Search /> snapshots Expect snapshot to match without props 1`] = `
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.c1 {
+  display: inline-block;
+  -webkit-flex: 0 0 18px;
+  -ms-flex: 0 0 18px;
+  flex: 0 0 18px;
+  margin: auto auto auto 16px;
+  opacity: 0.6;
+  padding-top: 4px;
+  width: 18px;
+}
+
+.c3 {
+  display: inline-block;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  position: relative;
+  width: 100%;
+}
+
+.c4 {
+  border: 0;
+  font: 400 16px/ 1 'Lato';
+  height: 48px;
+  outline: none;
+  padding: 8px 16px;
+  width: 100%;
+}
+
+.c4::-webkit-input-placeholder {
+  color: rgba(11,26,52,0.5);
+  font: 300 13px/ 1 'Lato';
+  line-height: 1.5;
+}
+
+.c4::-moz-placeholder {
+  color: rgba(11,26,52,0.5);
+  font: 300 13px/ 1 'Lato';
+  line-height: 1.5;
+}
+
+.c4:-ms-input-placeholder {
+  color: rgba(11,26,52,0.5);
+  font: 300 13px/ 1 'Lato';
+  line-height: 1.5;
+}
+
+.c4::placeholder {
+  color: rgba(11,26,52,0.5);
+  font: 300 13px/ 1 'Lato';
+  line-height: 1.5;
+}
+
+.c4:focus {
+  color: rgba(14,176,234,1);
+  font-weight: 400;
+}
+
+.c5 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: linear-gradient( to right, rgba(255,255,255,0) 0%, white 50%, white 100% );
+  border: 0 none;
+  color: rgba(51,51,51,0.3);
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 48px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  outline: none;
+  padding: 0;
+  position: absolute;
+  right: 16px;
+  top: 0;
+  -webkit-transition: color 0.195s cubic-bezier(0.4,0,0.2,1);
+  transition: color 0.195s cubic-bezier(0.4,0,0.2,1);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 40px;
+  z-index: 1;
+}
+
+.c5:hover {
+  color: rgba(51,51,51,1);
+}
+
+.c5:disabled {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.c6 {
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,0.5);
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+.c7 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+<div
+  className="c0"
+>
+  <div
+    aria-hidden="true"
+    className="c1"
+  >
+    <svg
+      viewBox="0 0 17 17"
+      width="18px"
+    >
+      <g
+        fill="none"
+        stroke="none"
+        strokeLinecap="round"
+        strokeWidth="1"
+      >
+        <g
+          stroke="currentColor"
+          strokeWidth="2"
+          transform="translate(1.000000, 1.000000)"
+        >
+          <g>
+            <circle
+              cx="6.5"
+              cy="6.5"
+              r="6"
+            />
+            <path
+              d="M14.5,14.5 L10.742,10.742"
+            />
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <div
+    className="c2"
+  />
+  <div
+    className="c3"
+  >
+    <input
+      className="c4"
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      placeholder="Find (F1)"
+      type="text"
+      value=""
+    />
+    <button
+      className="c5"
+      disabled={true}
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 12 12"
+        width="14px"
+      >
+        <g
+          fill="none"
+          fillRule="evenodd"
+          stroke="none"
+          strokeWidth="1"
+        >
+          <g
+            fill="currentColor"
+            fillRule="nonzero"
+          >
+            <polygon
+              points="11.53 1.53 10.47 0.47 6 4.94 1.53 0.47 0.47 1.53 4.94 6 0.47 10.47 1.53 11.53 6 7.06 10.47 11.53 11.53 10.47 7.06 6"
+            />
+          </g>
+        </g>
+      </svg>
+    </button>
+    <div
+      className="c6"
+    >
+      <ul
+        className="c7"
+      />
+    </div>
+  </div>
+</div>
+`;
