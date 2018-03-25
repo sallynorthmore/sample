@@ -1,7 +1,7 @@
-import { injectGlobal } from "styled-components";
+import { injectGlobal } from 'styled-components';
 
 export default function injectGlobalStyles() {
-  return injectGlobal`
+	return injectGlobal`
 		/* stylelint-disable selector-max-universal, selector-max-type  */
 		/* Minimal reset that keeps insepector output clean */
 		*,

@@ -25,9 +25,7 @@ stories.add(
 								width: '140px',
 							}}
 						>
-							<Icon
-								fillColor={text('Icon fillColor', 'black')}
-							/>
+							<Icon fillColor={text('Icon fillColor', 'black')} />
 						</div>
 					);
 				})}
