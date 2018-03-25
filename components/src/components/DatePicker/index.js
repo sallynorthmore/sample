@@ -1,3 +1,10 @@
+/**
+ * DatePicker
+ *
+ * DatePicker is a component where I used AirBnB's 'react-dates' library
+ * to create a custom-styled dates range selector.
+ */
+
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
@@ -5,16 +12,14 @@ import 'react-dates/initialize';
 import { DateRangePicker } from 'react-dates';
 import 'react-dates/lib/css/_datepicker.css';
 
-import FilterControls from '../FilterControls';
-import { IconChevron, IconTick } from '../Icon';
+import { Check, Chevron } from '../Icon';
 import {
 	Button,
 	ButtonGroup,
+	ClearButton,
 	Inner,
 	ReactDates,
 	Summary,
-	WeekHeader,
-	WeekDay,
 } from './styles';
 
 class DatePicker extends Component {
@@ -23,22 +28,7 @@ class DatePicker extends Component {
 		startDate: mapDateToMoment(this.props.startDate),
 		endDate: mapDateToMoment(this.props.endDate),
 		isCustomSelected: true,
-		totalWeekRows: 5,
-		isCalendarRendered: false,
 	};
-
-	/**
-	 * Delay displaying react dates on render.
-	 * Otherwise it creates a janky twitch effect
-	 * when clicking into a filter
-	 */
-	componentDidMount() {
-		setTimeout(() => {
-			this.setState({
-				isCalendarRendered: true,
-			});
-		}, 150);
-	}
 
 	componentWillReceiveProps(nextProps) {
 		const nextStartMoment = mapDateToMoment(nextProps.startDate);
@@ -55,10 +45,16 @@ class DatePicker extends Component {
 		}
 	}
 
-	handleClearFilter = () => {
+	onClearFilter = () => {
 		this.onDatesChange({ startDate: null, endDate: null });
 		this.setState({
 			isCustomSelected: false,
+		});
+	};
+
+	onCustomClick = () => {
+		this.setState({
+			isCustomSelected: true,
 		});
 	};
 
@@ -72,12 +68,9 @@ class DatePicker extends Component {
 		});
 	};
 
-	onPresetClick = ({ startDate, endDate }) => {
-		this.setState({ isCustomSelected: false });
-		this.onDatesChange({ startDate, endDate });
-	};
-
-	// Force the focusedInput to always be truthy so that dates are always selectable
+	/**
+	 * Force the focusedInput to always be truthy so that dates are always selectable
+	 */
 	onFocusChange = focusedInput => {
 		this.setState({
 			focusedInput: !focusedInput ? 'startDate' : focusedInput,
@@ -85,10 +78,9 @@ class DatePicker extends Component {
 		});
 	};
 
-	onCustomClick = () => {
-		this.setState({
-			isCustomSelected: true,
-		});
+	onPresetClick = ({ startDate, endDate }) => {
+		this.setState({ isCustomSelected: false });
+		this.onDatesChange({ startDate, endDate });
 	};
 
 	renderDatePresets = () => {
@@ -96,14 +88,14 @@ class DatePicker extends Component {
 		const today = moment();
 		const presets = [
 			{
-				text: 'Last week',
-				start: moment().subtract(1, 'week'),
-				end: today,
+				text: 'Next week',
+				end: moment().add(1, 'week'),
+				start: today,
 			},
 			{
-				text: 'Last month',
-				start: moment().subtract(1, 'month'),
-				end: today,
+				text: 'Next month',
+				end: moment().add(1, 'month'),
+				start: today,
 			},
 		];
 
@@ -122,7 +114,7 @@ class DatePicker extends Component {
 						>
 							{text}
 							<Summary>
-								<IconTick width={14} />
+								<Check width={14} />
 							</Summary>
 						</Button>
 					);
@@ -134,42 +126,15 @@ class DatePicker extends Component {
 		);
 	};
 
-	getNumberOfWeekDayOccurancesInMonth = ({ date, weekday }) => {
-		date.date(1);
-		const diff = (7 + (weekday - date.weekday())) % 7 + 1;
-		return Math.floor((date.daysInMonth() - diff) / 7) + 1;
-	};
-
-	onArrowClick = e => {
-		const firstDayOfMonth = moment(e)
-			.startOf('month')
-			.weekday();
-		const totalMondays = this.getNumberOfWeekDayOccurancesInMonth({
-			date: e,
-			weekday: 1,
-		});
-		const totalWeekRows = totalMondays + (firstDayOfMonth === 1 ? 0 : 1);
-
-		/**
-		 * Pause to let react-dates to catch up with rerender
-		 * It was failing to re-attach its event handlers on the calendars
-		 */
-		if (totalWeekRows !== this.state.totalWeekRows) {
-			setTimeout(() => {
-				this.setState({ totalWeekRows });
-			}, 5);
-		}
-	};
-
 	render() {
 		const {
 			endDate,
 			focusedInput,
 			isCalendarRendered,
 			isCustomSelected,
-			totalWeekRows,
 			startDate,
 		} = this.state;
+
 		const dateRangePresets = {
 			block: true,
 			customArrowIcon: '-',
@@ -183,13 +148,11 @@ class DatePicker extends Component {
 			hideKeyboardShortcutsPanel: true,
 			isOutsideRange: () => {},
 			keepOpenOnDateSelect: true,
-			navNext: <IconChevron width={11} />,
-			navPrev: <IconChevron width={11} />,
+			navNext: <Chevron width={11} />,
+			navPrev: <Chevron width={11} />,
 			numberOfMonths: 2,
 			onDatesChange: this.onDatesChange,
 			onFocusChange: this.onFocusChange,
-			onNextMonthClick: this.onArrowClick,
-			onPrevMonthClick: this.onArrowClick,
 			orientation: 'vertical',
 			small: true,
 			startDate: startDate,
@@ -203,23 +166,13 @@ class DatePicker extends Component {
 
 		return (
 			<Inner>
-				<FilterControls
-					onClearClick={this.handleClearFilter}
-					isClearDisabled={!hasDatesSelected}
-				/>
+				<ClearButton onClick={this.onClearFilter} disabled={!hasDatesSelected}>
+					Clear
+				</ClearButton>
 
 				{this.renderDatePresets()}
 
 				<ReactDates isActive={hasDatesSelected} isVisible={isCalendarRendered}>
-					<WeekHeader yOffset={totalWeekRows}>
-						<WeekDay>Mo</WeekDay>
-						<WeekDay>Tu</WeekDay>
-						<WeekDay>We</WeekDay>
-						<WeekDay>Th</WeekDay>
-						<WeekDay>Fr</WeekDay>
-						<WeekDay>Sa</WeekDay>
-						<WeekDay>Su</WeekDay>
-					</WeekHeader>
 					<DateRangePicker {...dateRangePresets} />
 				</ReactDates>
 			</Inner>
@@ -239,6 +192,7 @@ function isSameDay(a, b) {
 		a.date() === b.date() && a.month() === b.month() && a.year() === b.year()
 	);
 }
+
 /**
  * Maps the date strings to moment objects
  * Passes on null values

@@ -22,11 +22,18 @@
     "@storybook/addon-links": "^3.2.0",
     "@storybook/react": "^3.2.0",
     "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-plugin-styled-components": "^1.5.1",
     "eslint": "^4.17.0",
-    "eslint-config-recommended": "^2.0.0",
     "eslint-plugin-prettier": "^2.6.0",
-    "eslint-plugin-react": "^7.7.0",
-    "prettier": "1.8.2"
+    "eslint-plugin-react": "^7.6.1",
+    "prettier": "1.8.2",
+    "stylelint": "^8.4.0",
+    "stylelint-config-recommended": "^2.0.1",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-number-z-index-constraint": "^1.0.1",
+    "stylelint-order": "^0.8.0",
+    "stylelint-processor-styled-components": "^1.2.2"
   },
   "dependencies": {
     "babel-eslint": "^8.2.2",
@@ -35,5 +42,8 @@
     "react-dates": "^16.4.0",
     "react-dom": "^16.2.0",
     "styled-components": "^2.2.3"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
   }
 }

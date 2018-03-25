@@ -1,22 +1,20 @@
 import styled from 'styled-components';
 
-const blue = 'rgba(0, 129, 187, 1)';
+const blue = 'rgb(34, 136, 204)';
 const grey = 'rgba(51, 51, 51, 1)';
-const greyLight = 'rgba(213, 216, 220, 0.5)';
+const grey50 = 'rgba(213, 216, 220, 0.5)';
 
 export const Inner = styled.div`
-	flex: 1;
+	font-family: 'Helvetica', sans-serif;
 	max-width: 336px;
-	overflow-x: hidden;
-	overflow-y: auto;
 	position: relative;
 	width: 100%;
 
 	/*
 	 * AirBnB React Dates CSS overrides
 	 */
-	/* stylelint-disable */
 
+	/* stylelint-disable */
 	& .DateRangePicker_picker {
 		position: static;
 		top: 0;
@@ -31,10 +29,9 @@ export const Inner = styled.div`
 		background: white;
 		border: 1px solid ${blue};
 		display: flex;
-		height: 35px;
+		height: 40px;
 		justify-content: center;
 		outline: none;
-		padding: 8px;
 		position: absolute;
 		right: 16px;
 		text-align: center;
@@ -48,7 +45,6 @@ export const Inner = styled.div`
 			color: ${blue};
 			display: inline-block;
 			flex: 0 0 65px;
-			font: 400 13px/ 1 'Lato';
 			margin: 0;
 			max-width: 65px;
 			outline: none;
@@ -57,7 +53,6 @@ export const Inner = styled.div`
 
 			&::placeholder {
 				color: rgba(11, 26, 52, 0.5);
-				font: 400 13px/ 1 'Lato';
 				line-height: 1.5;
 			}
 
@@ -82,14 +77,6 @@ export const Inner = styled.div`
 			display: block;
 			height: 1px;
 			width: 100%;
-		}
-
-		& * > * {
-			font: 400 13px 'Lato';
-		}
-
-		& tr {
-			border: 1px solid white;
 		}
 	}
 
@@ -123,7 +110,7 @@ export const Inner = styled.div`
 	}
 
 	& .CalendarDay__selected_span {
-		background: ${greyLight};
+		background: ${grey50};
 		color: ${grey};
 
 		&:hover {
@@ -133,7 +120,7 @@ export const Inner = styled.div`
 	}
 
 	& .CalendarDay__hovered_span {
-		background: ${greyLight};
+		background: ${grey50};
 		color: ${grey};
 
 		&:hover {
@@ -212,43 +199,42 @@ export const Inner = styled.div`
 	/* stylelint-enable */
 `;
 
+export const ClearButton = styled.button`
+	background: transparent;
+	border: none;
+	box-shadow: inset 0 -1px 0 0 rgba(227, 232, 236, 1);
+	color: rgba(122, 122, 122, 0.7);
+	cursor: pointer;
+	display: block;
+	font-size: 13px;
+	opacity: ${props => (props.disabled ? '0.3' : '1')};
+	outline: none;
+	padding: 8px;
+	pointer-events: ${props => (props.disabled ? 'none' : 'auto')};
+	position: relative;
+	text-align: right;
+	user-select: none;
+	width: 100%;
+
+	&:hover {
+		color: rgba(0, 129, 187, 1);
+	}
+
+	&:not(:first-of-type)::before {
+		background: rgba(227, 232, 236, 1);
+		content: '';
+		display: inline-block;
+		height: 13px;
+		left: 0;
+		position: absolute;
+		width: 1px;
+	}
+`;
+
 export const Summary = styled.span`
 	display: inline-block;
 	margin: auto 0 auto auto;
 	opacity: 1;
-`;
-
-export const WeekHeader = styled.ul`
-	display: flex;
-	justify-content: space-around;
-	left: 20px;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	top: 560px;
-	width: 294px;
-	z-index: 9;
-
-	${props => (props.yOffset === 6 ? 'top: 600px;' : null)};
-	${props => (props.yOffset === 4 ? 'top: 518px;' : null)};
-`;
-
-export const WeekDay = styled.li`
-	color: rgba(197, 197, 197, 1);
-	flex: 0 0 40px;
-	font: 400 13px 'Lato';
-	letter-spacing: 0.63px;
-	text-align: center;
-
-	&:first-child {
-		text-align: center;
-	}
-`;
-
-export const ReactDates = styled.div`
-	display: ${props => (props.isVisible ? 'block' : 'none')};
-	opacity: ${props => (props.isActive ? '1' : '0.3')};
 `;
 
 export const ButtonGroup = styled.div`
@@ -262,7 +248,6 @@ export const Button = styled.div`
 	color: ${props => (props.isActive ? blue : 'rgba(51, 51, 51, 1)')};
 	cursor: pointer;
 	display: flex;
-	font: 400 14px/1 'Lato';
 	justify-content: space-between;
 	margin: 0;
 	min-height: 54px;
@@ -273,7 +258,7 @@ export const Button = styled.div`
 	user-select: none;
 	width: 100%;
 	z-index: ${props =>
-		props.isActive ? '0' : '10'}; /* Hide AirBnB input when inactive */
+		props.isActive ? '0' : '1'}; /* Hide AirBnB input when inactive */
 
 	&:hover {
 		background: rgba(248, 248, 248, 1);
@@ -284,4 +269,8 @@ export const Button = styled.div`
 	& ${Summary} {
 		opacity: ${props => (props.isActive ? '1' : '0')};
 	}
+`;
+
+export const ReactDates = styled.div`
+	opacity: ${props => (props.isActive ? '1' : '0.3')};
 `;
