@@ -67,14 +67,6 @@ class DatePicker extends Component {
     this.onDatesChange({ startDate, endDate });
   };
 
-	renderClearButton = () => {
-		return (
-			<ClearButton onClick={this.onClearFilter} disabled={!hasDatesSelected}>
-				Clear
-			</ClearButton>
-		)
-	}
-
   renderDatePresets = () => {
     const { startDate, endDate, isCustomSelected } = this.state;
     const today = moment();
@@ -157,7 +149,9 @@ class DatePicker extends Component {
     return (
       <Inner>
 
-				{this.renderClearButton()}
+				<ClearButton onClick={this.onClearFilter} disabled={!hasDatesSelected}>
+					Clear
+				</ClearButton>
 
         {this.renderDatePresets()}
 

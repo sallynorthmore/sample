@@ -1,7 +1,11 @@
-// import React from 'react';
+import React from 'react';
 import { addDecorator, configure } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
-import injectGlobalStyles from '../src/styles/injectGlobalStyles';
+import { injectGlobal } from 'styled-components';
+import injectGlobalStyles from '../src/global/injectGlobalStyles';
+
+// Inject global styles
+injectGlobalStyles();
 
 // Load stories from components directory
 const req = require.context('../src/components', true, /story\.js$/);

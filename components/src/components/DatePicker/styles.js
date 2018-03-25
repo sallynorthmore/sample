@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
-const blue = "rgba(0, 129, 187, 1)";
+const blue = "rgb(34, 136, 204)";
 const grey = "rgba(51, 51, 51, 1)";
 const grey50 = "rgba(213, 216, 220, 0.5)";
 
 export const Inner = styled.div`
-  font-family: Helvetica;
-  flex: 1;
+	font-family: "Helvetica", sans-serif;
   max-width: 336px;
   position: relative;
   width: 100%;
@@ -30,10 +29,9 @@ export const Inner = styled.div`
     background: white;
     border: 1px solid ${blue};
     display: flex;
-    height: 24px;
+    height: 40px;
     justify-content: center;
     outline: none;
-    padding: 8px;
     position: absolute;
     right: 16px;
     text-align: center;
@@ -47,7 +45,6 @@ export const Inner = styled.div`
       color: ${blue};
       display: inline-block;
       flex: 0 0 65px;
-      font: 400 13px/ 1 Helvetica;
       margin: 0;
       max-width: 65px;
       outline: none;
@@ -56,7 +53,6 @@ export const Inner = styled.div`
 
       &::placeholder {
         color: rgba(11, 26, 52, 0.5);
-        font: 400 13px/ 1 Helvetica;
         line-height: 1.5;
       }
 
@@ -224,7 +220,6 @@ export const Button = styled.div`
   color: ${props => (props.isActive ? blue : "rgba(51, 51, 51, 1)")};
   cursor: pointer;
   display: flex;
-  font: 400 14px/1 Helvetica;
   justify-content: space-between;
   margin: 0;
   min-height: 54px;
@@ -235,7 +230,7 @@ export const Button = styled.div`
   user-select: none;
   width: 100%;
   z-index: ${props =>
-    props.isActive ? "0" : "10"}; /* Hide AirBnB input when inactive */
+    props.isActive ? "0" : "1"}; /* Hide AirBnB input when inactive */
 
   &:hover {
     background: rgba(248, 248, 248, 1);
@@ -246,4 +241,37 @@ export const Button = styled.div`
   & ${Summary} {
     opacity: ${props => (props.isActive ? "1" : "0")};
   }
+`;
+
+
+export const ClearButton = styled.button`
+	background: transparent;
+	border: none;
+	box-shadow: inset 0 -1px 0 0 rgba(227, 232, 236, 1);
+	color: rgba(122, 122, 122, 0.7);
+	cursor: pointer;
+	display: block;
+	font-size: 13px;
+	opacity: ${props => (props.disabled ? '0.3' : '1')};
+	outline: none;
+	padding: 8px;
+	pointer-events: ${props => (props.disabled ? 'none' : 'auto')};
+	position: relative;
+	user-select: none;
+	text-align: right;
+	width: 100%;
+
+	&:hover {
+		color: rgba(0, 129, 187, 1);
+	}
+
+	&:not(:first-of-type)::before {
+		background: rgba(227, 232, 236, 1);
+		content: '';
+		display: inline-block;
+		height: 13px;
+		left: 0;
+		position: absolute;
+		width: 1px;
+	}
 `;

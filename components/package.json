@@ -14,15 +14,17 @@
   },
   "homepage": "https://github.com/sallynorthmore/sample#readme",
   "devDependencies": {
-    "@storybook/react": "^3.2.0",
-    "babel-core": "^6.26.0",
     "@storybook/addon-actions": "^3.2.0",
     "@storybook/addon-info": "^3.2.0",
     "@storybook/addon-knobs": "^3.2.0",
-    "@storybook/addon-links": "^3.2.0"
+    "@storybook/addon-links": "^3.2.0",
+    "@storybook/react": "^3.2.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-styled-components": "^1.5.1"
   },
   "dependencies": {
     "react": "^16.2.0",
+    "react-dates": "^16.4.0",
     "react-dom": "^16.2.0",
     "styled-components": "^2.2.3"
   }
