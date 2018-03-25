@@ -1,3 +1,10 @@
+/**
+ * DatePicker
+ *
+ * DatePicker is a component where I used AirBnB's 'react-dates' library
+ * to create a custom-styled dates range selector.
+ */
+
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import moment from "moment";
@@ -54,7 +61,9 @@ class DatePicker extends Component {
     });
   };
 
-  // Force the focusedInput to always be truthy so that dates are always selectable
+	/**
+	 * Force the focusedInput to always be truthy so that dates are always selectable
+	 */
   onFocusChange = focusedInput => {
     this.setState({
       focusedInput: !focusedInput ? "startDate" : focusedInput,

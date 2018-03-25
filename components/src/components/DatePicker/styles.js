@@ -199,14 +199,42 @@ export const Inner = styled.div`
   /* stylelint-enable */
 `;
 
+export const ClearButton = styled.button`
+	background: transparent;
+	border: none;
+	box-shadow: inset 0 -1px 0 0 rgba(227, 232, 236, 1);
+	color: rgba(122, 122, 122, 0.7);
+	cursor: pointer;
+	display: block;
+	font-size: 13px;
+	opacity: ${props => (props.disabled ? '0.3' : '1')};
+	outline: none;
+	padding: 8px;
+	pointer-events: ${props => (props.disabled ? 'none' : 'auto')};
+	position: relative;
+	user-select: none;
+	text-align: right;
+	width: 100%;
+
+	&:hover {
+		color: rgba(0, 129, 187, 1);
+	}
+
+	&:not(:first-of-type)::before {
+		background: rgba(227, 232, 236, 1);
+		content: '';
+		display: inline-block;
+		height: 13px;
+		left: 0;
+		position: absolute;
+		width: 1px;
+	}
+`;
+
 export const Summary = styled.span`
   display: inline-block;
   margin: auto 0 auto auto;
   opacity: 1;
-`;
-
-export const ReactDates = styled.div`
-  opacity: ${props => (props.isActive ? "1" : "0.3")};
 `;
 
 export const ButtonGroup = styled.div`
@@ -243,35 +271,6 @@ export const Button = styled.div`
   }
 `;
 
-
-export const ClearButton = styled.button`
-	background: transparent;
-	border: none;
-	box-shadow: inset 0 -1px 0 0 rgba(227, 232, 236, 1);
-	color: rgba(122, 122, 122, 0.7);
-	cursor: pointer;
-	display: block;
-	font-size: 13px;
-	opacity: ${props => (props.disabled ? '0.3' : '1')};
-	outline: none;
-	padding: 8px;
-	pointer-events: ${props => (props.disabled ? 'none' : 'auto')};
-	position: relative;
-	user-select: none;
-	text-align: right;
-	width: 100%;
-
-	&:hover {
-		color: rgba(0, 129, 187, 1);
-	}
-
-	&:not(:first-of-type)::before {
-		background: rgba(227, 232, 236, 1);
-		content: '';
-		display: inline-block;
-		height: 13px;
-		left: 0;
-		position: absolute;
-		width: 1px;
-	}
+export const ReactDates = styled.div`
+  opacity: ${props => (props.isActive ? "1" : "0.3")};
 `;

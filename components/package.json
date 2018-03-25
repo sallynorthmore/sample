@@ -4,6 +4,7 @@
   "description": "A sample of components",
   "main": "index.js",
   "scripts": {
+    "lint:js": "eslint './src/**/*.js'",
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "repository": "",
@@ -20,12 +21,20 @@
     "@storybook/addon-links": "^3.2.0",
     "@storybook/react": "^3.2.0",
     "babel-core": "^6.26.0",
-    "babel-plugin-styled-components": "^1.5.1"
+    "babel-plugin-styled-components": "^1.5.1",
+    "eslint": "^4.17.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.6.1",
+    "prettier": "1.8.2"
   },
   "dependencies": {
+    "babel-eslint": "^8.2.2",
     "react": "^16.2.0",
     "react-dates": "^16.4.0",
     "react-dom": "^16.2.0",
     "styled-components": "^2.2.3"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
   }
 }
