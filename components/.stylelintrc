@@ -1,0 +1,50 @@
+{
+  "processors": ["stylelint-processor-styled-components"],
+    "plugins": [
+      "stylelint-order",
+      "stylelint-number-z-index-constraint"
+    ],
+  "extends": [
+    "stylelint-config-recommended"
+  ],
+  "rules": {
+        "block-no-empty": null,
+        "color-named": "always-where-possible",
+        "color-no-hex": true,
+        "declaration-empty-line-before": ["always",
+      {
+        "except": [
+          "first-nested"
+        ],
+        "ignore": [
+          "after-comment",
+          "after-declaration",
+          "inside-single-line-block"
+        ]
+      }
+        ],
+				"declaration-no-important": true,
+        "font-family-no-missing-generic-family-keyword": null,
+        "font-weight-notation": "numeric",
+        "max-nesting-depth": 2,
+        "order/order": [ "custom-properties", "declarations" ],
+        "order/properties-alphabetical-order": [ true, { "severity": "warning" }],
+        "plugin/number-z-index-constraint": {
+            "min": 0,
+            "max": 10
+        },
+        "property-no-vendor-prefix": true,
+        "selector-max-specificity": "0,2,1",
+        "selector-nested-pattern": "^&",
+    "selector-max-attribute": 1,
+    "selector-max-id": 0,
+    "selector-max-type": 0,
+    "selector-max-universal": 0,
+    "selector-no-vendor-prefix": true,
+		"selector-type-case": null,
+    "shorthand-property-no-redundant-values": true,
+    "unit-whitelist": ["px", "s", "deg", "%", "vh", "vw"],
+    "value-no-vendor-prefix": true,
+    "value-list-max-empty-lines": [0, {"severity": "warning"}]
+    }
+}

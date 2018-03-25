@@ -4,6 +4,7 @@
   "description": "A sample of components",
   "main": "index.js",
   "scripts": {
+    "lint:css": "stylelint './src/**/styles.js'",
     "lint:js": "eslint './src/**/*.js' --fix",
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
@@ -26,7 +27,13 @@
     "eslint": "^4.17.0",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.6.1",
-    "prettier": "1.8.2"
+    "prettier": "1.8.2",
+    "stylelint": "^8.4.0",
+    "stylelint-config-recommended": "^2.0.1",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-number-z-index-constraint": "^1.0.1",
+    "stylelint-order": "^0.8.0",
+    "stylelint-processor-styled-components": "^1.2.2"
   },
   "dependencies": {
     "react": "^16.2.0",
