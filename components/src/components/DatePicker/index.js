@@ -4,8 +4,7 @@ import moment from "moment";
 import "react-dates/initialize";
 import { DateRangePicker } from "react-dates";
 import "react-dates/lib/css/_datepicker.css";
-
-// import { IconChevron, IconTick } from "../Icon";
+import { Chevron, Check } from "../Icon";
 import { Button, ButtonGroup, Inner, ReactDates, Summary } from "./styles";
 
 class DatePicker extends Component {
@@ -97,7 +96,7 @@ class DatePicker extends Component {
               }
             >
               {text}
-              <Summary>{/* <IconTick width={14} /> */}</Summary>
+              <Summary><Check width={14} /></Summary>
             </Button>
           );
         })}
@@ -130,8 +129,8 @@ class DatePicker extends Component {
       hideKeyboardShortcutsPanel: true,
       isOutsideRange: () => {},
       keepOpenOnDateSelect: true,
-      // navNext: <IconChevron width={11} />,
-      // navPrev: <IconChevron width={11} />,
+      navNext: <Chevron width={11} />,
+      navPrev: <Chevron width={11} />,
       numberOfMonths: 2,
       onDatesChange: this.onDatesChange,
       onFocusChange: this.onFocusChange,
