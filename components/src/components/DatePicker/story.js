@@ -5,7 +5,7 @@ import { action } from "@storybook/addon-actions";
 
 import DatePicker from "./index";
 
-const startDate = "2018-03-25";
+const startDate = "2018-03-27";
 const endDate = null;
 
 const stories = storiesOf("DatePicker", module);

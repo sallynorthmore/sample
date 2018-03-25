@@ -4,8 +4,9 @@ import moment from "moment";
 import "react-dates/initialize";
 import { DateRangePicker } from "react-dates";
 import "react-dates/lib/css/_datepicker.css";
-import { Chevron, Check } from "../Icon";
-import { Button, ButtonGroup, Inner, ReactDates, Summary } from "./styles";
+
+import { Check, Chevron } from "../Icon";
+import { Button, ButtonGroup, ClearButton, Inner, ReactDates, Summary } from "./styles";
 
 class DatePicker extends Component {
   state = {
@@ -65,6 +66,14 @@ class DatePicker extends Component {
     this.setState({ isCustomSelected: false });
     this.onDatesChange({ startDate, endDate });
   };
+
+	renderClearButton = () => {
+		return (
+			<ClearButton onClick={this.onClearFilter} disabled={!hasDatesSelected}>
+				Clear
+			</ClearButton>
+		)
+	}
 
   renderDatePresets = () => {
     const { startDate, endDate, isCustomSelected } = this.state;
@@ -147,10 +156,8 @@ class DatePicker extends Component {
 
     return (
       <Inner>
-        {/* <FilterControls
-          onClearClick={this.onClearFilter}
-          isClearDisabled={!hasDatesSelected}
-        /> */}
+
+				{this.renderClearButton()}
 
         {this.renderDatePresets()}
 
