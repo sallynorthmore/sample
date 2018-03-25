@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint:css": "stylelint './src/**/styles.js'",
-    "lint:js": "eslint './src/**/*.js' --fix",
+    "lint:js": "eslint './src/**/*.js'",
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "repository": "",
@@ -36,6 +36,8 @@
     "stylelint-processor-styled-components": "^1.2.2"
   },
   "dependencies": {
+    "babel-eslint": "^8.2.2",
+    "moment": "^2.21.0",
     "react": "^16.2.0",
     "react-dates": "^16.4.0",
     "react-dom": "^16.2.0",
